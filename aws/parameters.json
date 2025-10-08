@@ -1,0 +1,16 @@
+{
+  "function_name": "LBD-PF-SANDBOX-NODEJS-VE",
+  "source_file": "lambda.zip",
+  "handler": "index.handler",
+  "runtime": "nodejs20.x",
+  "memory_size": "512",
+  "timeout": "10",
+  "lambda_architecture": "x86_64",
+  "environment_variables": {},
+  "assume_role_policy_name": "purpose_financial_lambda_docdb",
+  "lambda_layers": ["ly-zipcodes-nj", "lib-ly-cicd-scaff"],
+  "vpc_config": {
+      "security_group_name": ["SG-PF-LBD-NEW"]
+  }
+}
+
